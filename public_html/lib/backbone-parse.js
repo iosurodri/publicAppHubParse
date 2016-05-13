@@ -3,7 +3,7 @@
 var application_id = "myAppId";  // not change
 var rest_api_key = "";
 var api_name = "parse";
-var server_name = "https://my server name.herokuapp.com/";
+var server_name = "https://publicapphubparse.herokuapp.com/";
 
 /******************* END *************************/
 
