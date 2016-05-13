@@ -1,0 +1,35 @@
+<h3><%= name %></h3>
+
+
+<table class="table table-condensed">      
+    <tr>
+      <td>Nombre:</td>
+      <td><%= name %></td>
+   </tr>
+    <tr>
+       <td>Categoría:</td>
+       <td><%= category %></td>
+   </tr>
+   <tr>
+       <td>Descripción:</td>
+       <td><%= description %></td>
+   </tr>
+   <tr>
+       <td>Descripción Visual:</td>
+       <td><img src="<%= img1%>" alt="img1" height="100" width="100"></td>
+       <td><img src="<%= img2%>" alt="img1" height="100" width="100"></td>
+       <td><img src="<%= img3%>" alt="img1" height="100" width="100"></td>
+   </tr>
+   <tr>
+       <td>Implementaciones de código:</td>
+       <!--Crear div que se sustituirá por los distintos códigos a mostrar, 
+       e iremos concatenando todos los que tengamos.-->
+       <!--ELIMINADO DE AQUÍ-->
+       
+   </tr>
+   <tr>
+       <td>Nuevo código:</td>
+       <td><a href="#newCode/<%= id %>">Implementación</a></td>
+   </tr>
+   <div id="code" class="span12"></div>
+</table>

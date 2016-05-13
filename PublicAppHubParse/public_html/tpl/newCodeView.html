@@ -1,0 +1,59 @@
+<div class="row">
+    <h2 class="">New Code</h2><br>
+    <div class="span12">
+       <form name=newCodeForm id="newCodeForm" method="get" class="form-horizontal">
+           
+           <div class="form-group">
+                <label class="col-sm-1 control-label">Nombre del código</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" name="codeName" 
+                           id="codeName" placeholder="Introduce el nombre"><br>
+                </div>
+           </div>
+           <div class="form-group">
+                <label class="col-sm-1 control-label">Servicio asociado</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" name="service" 
+                           id="service" placeholder="Mi Villavesa"><br>
+                </div>
+           </div>
+           <div class="form-group">
+                <label class="col-sm-1 control-label">Autor</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" name="author"
+                           id="name" placeholder="Introduzca su perfil de Linkedin"><br>
+                </div>
+           </div>
+           <div class="form-group">
+                <label class="col-sm-1 control-label">Dirección del código</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" name="codeLocation" 
+                           id="codeLocation" placeholder="Introduzca la URL"><br>
+                </div>
+           </div>
+           <div class="form-group">
+               <label class="col-sm-1 control-label">Plataforma</label>
+               <div class="col-sm-10">
+                    <label class="radio-inline">
+                        <input type="radio" name="platform" id="platform1" 
+                               value="health"> HTML5<br>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="platform" id="platform2" 
+                               value="education"> Android<br>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="platform" id="platform3" 
+                               value="transportation"> iOS<br>
+                    </label>
+               </div>
+           </div>           
+           
+           <input type="button" value="Submit" onclick="app.router.submitCode
+               (window.location.hash.split('/')[1]);"> <br>
+           <!--Pasamos al método submitCode el parámetro id del modelo al que
+           pertenece, que obtendremos cogiendo la última parte de la url. -->
+       </form>
+    </div>
+</div>
+<br/>

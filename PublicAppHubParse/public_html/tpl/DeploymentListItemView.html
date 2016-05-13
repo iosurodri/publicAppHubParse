@@ -1,0 +1,13 @@
+<div class="table-bordered">
+    <h3 class="thumbnail" style="text-align: center"><%= deploymentName %></h3>
+    <h4 class="" >URL:  <%= URL %></h4>
+    <div class="left">
+        <a class="btn btn-primary btn-lg" href='#deployments/<%= id %>' role="button">
+            Ver detalles...
+        </a>
+        <a class="btn btn-danger btn-lg" onclick="app.router.removeDeployment('<%= id %>')" role="button">
+            Eliminar
+        </a>
+    </div>
+</div>
+<br>

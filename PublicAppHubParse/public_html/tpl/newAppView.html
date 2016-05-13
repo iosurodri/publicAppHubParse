@@ -1,0 +1,59 @@
+<div class="row">
+    <h2 class="">New App</h2><br>
+    <div class="span12">
+       <form name=newAppForm id="newAppForm" method="get" class="form-horizontal">
+           <div class="form-group">
+                <label class="col-sm-1 control-label">Nombre</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Name"><br>
+                </div>
+           </div>
+           <div class="form-group">
+               <label class="col-sm-1 control-label">Descripción</label>
+               <div class="col-sm-10">
+                   <textarea rows="10" cols="30" class="form-control" name="description" id="description" 
+                     placeholder="Description"></textarea><br>
+               </div>
+           </div>
+           <div class="form-group">
+               <label class="col-sm-1 control-label">Categoría</label>
+               <div class="col-sm-10">
+                    <label class="radio-inline">
+                        <input type="radio" name="category" id="category1" value="health"> Health<br>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="category" id="category2" value="education"> Education<br>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="category" id="category3" value="transportation"> Transportation<br>
+                    </label>
+               </div>
+           </div>        
+           <div class="form-group">
+               <label class="col-sm-1 control-label">Imagen 1</label>
+               <div class="col-sm-10">
+                   <input type="file" name="input1" id="input1" onchange="app.router.preview('input1', 'img1');">
+                   <img  src="" id="img1" width="100" height="100"> <br>
+               </div>
+           </div>
+           <div class="form-group">
+               <label class="col-sm-1 control-label">Imagen 2</label>
+               <div class="col-sm-10">
+                   <input type="file" name="input2" id="input2" onchange="app.router.preview('input2', 'img2');">
+                   <img  src="" id="img2" width="100" height="100"> <br>
+               </div>
+           </div>
+           <div class="form-group">
+               <label class="col-sm-1 control-label">Imagen 3</label>
+               <div class="col-sm-10">
+                   <input type="file" name="input3" id="input3" onchange="app.router.preview('input3', 'img3');">
+                   <img  src="" id="img3" width="100" height="100"> <br>
+               </div>
+           </div>
+           <input type="button" value="Submit" onclick="app.router.submit();"> <br>
+       </form>
+    </div>
+</div>
+<br/>
+
+

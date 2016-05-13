@@ -1,0 +1,13 @@
+<div class="table-bordered">
+    <h3 class="thumbnail"><%= name %></h3>
+    <h4 class="" >Categoría: <%= category %></h4>
+    <div class="left">
+        <a class="btn btn-primary btn-lg" href='#apps/<%= id %>' role="button">
+            Ver detalles...
+        </a>
+        <a class="btn btn-danger btn-lg" onclick="app.router.remove('<%= id %>')" role="button">
+            Eliminar
+        </a>
+    </div>
+</div>
+<br>

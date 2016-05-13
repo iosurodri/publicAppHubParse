@@ -1,0 +1,56 @@
+<div class="row">
+    <h2 class="">New Deployment</h2><br>
+    <div class="span12">
+       <form name=newDeploymentForm id="newDeploymentForm" method="get" class="form-horizontal">           
+           <div class="form-group">
+                <label class="col-sm-1 control-label">Nombre del despliegue</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" name="deploymentName" 
+                           id="deploymentName" placeholder="Introduce el nombre"><br>
+                </div>
+           </div>
+           <div class="form-group">
+                <label class="col-sm-1 control-label">Código asociado</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" name="associatedCode" 
+                           id="associatedCode" placeholder="VillavesaOnline"><br>
+                </div>
+           </div>
+           <div class="form-group">
+                <label class="col-sm-1 control-label">URL del Despliegue</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" name="URL"
+                           id="URL" placeholder="Introduzca la URL"><br>
+                </div>
+           </div>
+           <div class="form-group">
+                <label class="col-sm-1 control-label">Área geográfica de los usuarios</label>
+                <div class="col-sm-10">
+                    <select name="country" class="crs-country" 
+                            id="country" data-region-id="crs-region"></select>                    
+                </div>
+                <div class="col-sm-10">
+                    <select name="region" id="crs-region"></select>
+                </div>
+           </div>
+           <!--
+                    <select name="country" class="crs-country" 
+                            id="country" data-region-id="crs-region"></select>                    
+                    <select name="region" id="crs-region"></select>
+           -->
+           <select class="crs-country"></select>
+           <div class="form-group">
+                <label class="col-sm-1 control-label">Empresa</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" name="empresa"
+                           id="empresa" placeholder="Introduzca la compañía"><br>
+                </div>
+           </div>   
+           <input type="button" value="Submit" onclick="app.router.submitDeployment
+               (window.location.hash.split('/')[1]);"> <br>
+           <!--Pasamos al método submitCode el parámetro id del modelo al que
+           pertenece, que obtendremos cogiendo la última parte de la url. -->
+       </form>
+    </div>
+</div>
+<br/>

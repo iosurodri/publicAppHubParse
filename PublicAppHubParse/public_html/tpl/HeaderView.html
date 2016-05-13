@@ -1,0 +1,35 @@
+<header class="navbar navbar-default" role="banner">
+    
+        <!-- <div class="navbar-inner"> -->
+  <div class="container"> 
+             
+     <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nv-collapse-example">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Application Hub</a>
+     </div>
+        
+     <nav class="collapse navbar-collapse nv-collapse-example" role="navigation"> 
+          <ul class="nav navbar-nav pull-right">
+              <li class="newApp-menu"><!--AQUÍ--><a href="#newApp">Nueva App</a></li>
+          </ul>  
+         <div style="height: 16.3px"></div>
+         <select class="col-xs-1 pull-right navbar-collapse" 
+                 onchange="location = this.options[this.selectedIndex].value; ">
+             <!--La navegación está enlazada por medio del router con una 
+                 función que se encarga de renderizar únicamente las apps de
+                 una categoría determinada-->
+             <option value="">Todos</option>
+             <option value="#categories/health">Salud</option>
+             <option value="#categories/education">Educación</option>
+             <option value="#categories/transportation">Transporte</option>
+         </select>
+     </nav>
+            <!--/.nav-collapse -->    
+</header>
+
+      
