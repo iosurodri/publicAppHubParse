@@ -284,7 +284,7 @@ app.Router = Backbone.Router.extend({
 
 
 $(document).on("ready", function () {
-    Parse.initialize();
+    Parse.initialize("publicAppHubParse", "unused");
     app.loadTemplates(["newAppView","HeaderView", "ApplicationListItemView", 
         "ApplicationView", "newCodeView", "CodeView", "CodeListItemView", 
         "DeploymentListItemView", "DeploymentView", "newDeploymentView"],
